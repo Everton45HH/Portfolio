@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+}
+body , html{
+  min-height: 100vh;
+}
+
+@font-face {
+  font-family: "Square";
+  src: url('../src/assets/fonts/TT\ Octosquares\ Trial\ DemiBold.ttf');
+}
+@font-face {
+  font-family: "Square2";
+  src: url('../src/assets/fonts/TT\ Octosquares\ Trial\ Medium.ttf');
+}
