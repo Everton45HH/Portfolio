@@ -1,11 +1,12 @@
 import styles from "../../projects/project.module.css";
-import gps from "../../../../assets/img/ic--baseline-place.svg"
+import gps from "../../../../assets/img/ic--baseline-place.svg";
 
-export default function petag() {
+export default function Petag() {
+  const techs = ["API REST", "JWT Auth", "PostgreSQL" ];
+
   return (
     <>
       <div className={styles.project}>
-        
         <h1 className={styles.black}>
           <span className={styles.blue}>Pe</span>TAG
         </h1>
@@ -16,16 +17,21 @@ export default function petag() {
           coleira inteligente e uma plataforma web.
         </p>
 
+        <div className={styles.techs}>
+          {techs.map((tech) => (
+            <span key={tech} className={styles.tech}>{tech}</span>
+          ))}
+        </div>
 
-          <a href="https://petag-project.vercel.app/" target="_blank">
-            Conhecer
-          </a>
-              <img src={gps} alt="gps_icon" 
-        className={styles.gps}
-        />
-  
+        <a
+          href="https://petag-project.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Conhecer
+        </a>
+        <img src={gps} alt="gps_icon" className={styles.gps} />
       </div>
-      
     </>
   );
 }

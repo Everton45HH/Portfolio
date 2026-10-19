@@ -2,6 +2,7 @@ import styles from "../../projects/project.module.css";
 import pdf from "../../../../assets/img/line-md--document.svg";
 
 export default function screenshot() {
+  const techs = ["React", "Vercel", "PDF"];
   return (
     <>
       <div className={styles.project}>
@@ -17,9 +18,17 @@ export default function screenshot() {
           conversão de Capturas de Telas(ScreenShots) para PDF
         </p>
 
-          <a href="https://etdev-screenshottopdf.vercel.app/" target="_blank">
-            Conhecer
-          </a>
+        <div className={styles.techs}>
+          {techs.map((tech) => (
+            <span key={tech} className={styles.tech}>
+              {tech}
+            </span>
+          ))}
+        </div>
+
+        <a href="https://etdev-screenshottopdf.vercel.app/" target="_blank">
+          Conhecer
+        </a>
         <img src={pdf} alt="gps_icon" className={styles.pdf} />
       </div>
     </>

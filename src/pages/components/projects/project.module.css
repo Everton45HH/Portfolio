@@ -97,6 +97,22 @@
   background-color: var(--text-primary);
   color: var(--green-primary);
 }
+.techs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.tech {
+  padding: .5em;
+  margin: auto;
+  border-radius: 999px;
+  background: var(--text  -primary);
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
 
 @media (max-width: 900px) {
   .project:nth-child(odd) {
