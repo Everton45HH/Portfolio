@@ -15,7 +15,7 @@ export default function codex() {
           coleira inteligente e uma plataforma web.
         </p>
 
-          <a href="https://petag-project.vercel.app/" target="_blank">
+          <a href="#" target="_blank">
             Conhecer
           </a>
                 <img src={terminal} alt="gps_icon" className={styles.terminal} />

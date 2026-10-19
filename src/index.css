@@ -3,42 +3,42 @@
   margin: 0;
   padding: 0;
   border: 0 solid;
-}
+  }
 
-:root { 
-  --bg-primary: #080B09;
-  --bg-secondary: #121A14;
-  --bg-hover: #1C2A1E;
-  --green-primary: #72B067;
-  --green-light: #A3D398;
-  --green-dark: #456F40;
-  --text-primary: #E8F0E6;
-  --text-secondary: #91A390;
-  --border-primary: #456F40;
-}
+  :root { 
+    --bg-primary: #080B09;
+    --bg-secondary: #121A14;
+    --bg-hover: #1C2A1E;
+    --green-primary: #72B067;
+    --green-light: #A3D398;
+    --green-dark: #456F40;
+    --text-primary: #E8F0E6;
+    --text-secondary: #91A390;
+    --border-primary: #456F40;
+  }
 
 
-h1, h2, h3{
-  font-size: inherit;
-}
+  h1, h2, h3{
+    font-size: inherit;
+  }
 
-button, input, select, optgroup, textarea, ::file-selector-button {
-  font: inherit;
-}
+  button, input, select, optgroup, textarea, ::file-selector-button {
+    font: inherit;
+  }
 
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-synthesis: none;
-}
-body , html{
-  min-height: 100vh;
-}
+  :root {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-synthesis: none;
+  }
+  body , html{
+    min-height: 100vh;
+  }
 
-@font-face {
-  font-family: "Square";
-  src: url('../src/assets/fonts/TT\ Octosquares\ Trial\ DemiBold.ttf');
-}
-@font-face {
-  font-family: "Square2";
-  src: url('../src/assets/fonts/TT\ Octosquares\ Trial\ Medium.ttf');
-}
+  @font-face {
+    font-family: "Square";
+    src: url('../src/assets/fonts/TT\ Octosquares\ Trial\ DemiBold.ttf');
+  }
+  @font-face {
+    font-family: "Square2";
+    src: url('../src/assets/fonts/TT\ Octosquares\ Trial\ Medium.ttf');
+  }
