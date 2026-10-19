@@ -1,0 +1,111 @@
+/* CSS base para todos o porjetos para eu não precisar criar um css para cada jsx */
+
+.red {
+  color: red;
+}
+.black {
+  color: black;
+  font-size: clamp(1rem, 1.5vw, 2rem);
+}
+.blackLabel {
+  background-color: black;
+}
+.blue {
+  color: blue;
+}
+
+.gps {
+  position: absolute;
+  fill: red;
+  height: 60px;
+  width: 60px;
+  top: -30px;
+  right: -30px;
+  transform: rotate(30deg);
+  border-radius: 40px;
+  background-color: white;
+}
+
+.pdf {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  top: 110px;
+  left: -30px;
+  transform: rotate(-30deg);
+  border-radius: 40px;
+}
+
+.terminal {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  top: 60%;
+  right: -30px;
+  transform: rotate(50deg);
+  border-radius: 40px;
+}
+
+
+.project {
+  position: relative;
+  background-color: var(--bg-secondary);
+  border: 2px solid var(--border-primary);
+  color: var(--text-primary);
+  flex-direction: column;
+  border-radius: 20px;
+  min-height: 300px;
+  max-height: min-content;
+  display: flex;
+  height: auto;
+  min-width: 0;
+  transition: 0.2s;
+  text-align: center;
+  font-size: 1em;
+  padding: 1.3em;
+}
+
+.project:nth-child(odd) {
+  margin-top: 3em;
+}
+
+.project h1 {
+  background-color: var(--text-primary);
+  border-radius: 15px;
+  padding: 0.4em;
+  font-size: 1.6em;
+  margin-bottom: 1.4em;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.project a {
+  margin-top: auto;
+  padding: 0.2em 1.5em;
+  border: 2px solid var(--green-primary);
+  background-color: var(--green-primary);
+  border-radius: 12px;
+  color: var(--bg-secondary);
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.project a:hover {
+  background-color: var(--text-primary);
+  color: var(--green-primary);
+}
+
+@media (max-width: 900px) {
+  .project:nth-child(odd) {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .project:nth-child(odd) {
+    margin-top: 0;
+  }
+}

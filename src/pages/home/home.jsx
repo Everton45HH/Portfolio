@@ -1,13 +1,19 @@
 import styles from "./home.module.css";
 
-import { _React, Flask, Mysql, Python, Git } from "@dev.icons/react";
+import Codex  from '../components/projects/codex/codex'
+import Petag  from '../components/projects/petag/petag'
+import Screenshot  from '../components/projects/screenshottopdf/screenshot'
 import Face from "../components/face/face";
+
+import { _React, Flask, Mysql, Python, Git } from "@dev.icons/react";
 
 export default function Home() {
   return (
     <>
       <div className={styles.global}>
-        <span className={styles.elipse}></span>
+        
+        <div className={styles.firstPage}>
+          <span className={styles.elipse}></span>
         <header>
           <h1>EVERTON</h1>
 
@@ -24,14 +30,14 @@ export default function Home() {
           </div>
           <div>
             <h2>Conheça meus projetos</h2>
-            <button>CONHECER →</button>
+            <a href="#myProjects">CONHECER →</a>
           </div>
           <div>
             <h2>Formação</h2>
             <ul>
               <li>
                 <p>
-                  Cursando Técnologo em ADS <br /> (IFSP - BRA)
+                  Cursando Tecnólogo em ADS <br /> (IFSP - BRA)
                 </p>
               </li>
               <li>
@@ -50,12 +56,7 @@ export default function Home() {
 
           <div className={styles.skills}>
             <div className={styles.skillItem}>
-              <_React
-                className={styles.skillsIcon}
-                size={69}
-                alt="React"
-                color="#39ff14"
-              />
+              <Python className={styles.skillsIcon} size={65} alt="Python" />
             </div>
             <div className={styles.skillItem}>
               <Flask
@@ -66,22 +67,38 @@ export default function Home() {
               />
             </div>
             <div className={styles.skillItem}>
-              <Mysql className={styles.skillsIcon} size={70} alt="MySQL" />
+              <_React
+                className={styles.skillsIcon}
+                size={69}
+                alt="React"
+                color="#39ff14"
+              />
             </div>
             <div className={styles.skillItem}>
-              <Python className={styles.skillsIcon} size={65} alt="Python" />
+              <Mysql className={styles.skillsIcon} size={70} alt="MySQL" />
             </div>
             <div className={styles.skillItem}>
               <Git className={styles.skillsIcon} size={70} alt="Git " />
             </div>
           </div>
         </div>
+
+        </div>
+      <div className={styles.myProjects} id="myProjects">
+        <h1>Conheça meus projetos</h1>
+        <h2>
+          Conheça os mais diversos sites dos quais participei, desde a idealização até a produção.
+        </h2>
+
       </div>
 
       <div className={styles.projects}>
 
-        
+        <Screenshot/>
+        <Petag/>
+        <Codex/>
 
+      </div>
       </div>
 
     </>

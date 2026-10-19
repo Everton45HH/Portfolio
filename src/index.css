@@ -1,4 +1,30 @@
-@import "tailwindcss";
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0 solid;
+}
+
+:root { 
+  --bg-primary: #080B09;
+  --bg-secondary: #121A14;
+  --bg-hover: #1C2A1E;
+  --green-primary: #72B067;
+  --green-light: #A3D398;
+  --green-dark: #456F40;
+  --text-primary: #E8F0E6;
+  --text-secondary: #91A390;
+  --border-primary: #456F40;
+}
+
+
+h1, h2, h3{
+  font-size: inherit;
+}
+
+button, input, select, optgroup, textarea, ::file-selector-button {
+  font: inherit;
+}
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
