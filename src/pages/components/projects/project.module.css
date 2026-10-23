@@ -10,13 +10,16 @@
 .blackLabel {
   background-color: black;
 }
+.whiteLabel {
+  background-color: white;
+  color: black;
+}
 .blue {
   color: blue;
 }
 
 .gps {
   position: absolute;
-  fill: red;
   height: 60px;
   width: 60px;
   top: -30px;
@@ -46,6 +49,16 @@
   border-radius: 40px;
 }
 
+.chef {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  right: -20px;
+  top: -20px;
+  fill: white;
+  transform: rotate(50deg);
+  border-radius: 40px;
+}
 
 .project {
   position: relative;
@@ -70,7 +83,6 @@
 }
 
 .project h1 {
-  background-color: var(--text-primary);
   border-radius: 15px;
   padding: 0.4em;
   font-size: 1.6em;
@@ -105,10 +117,10 @@
 }
 
 .tech {
-  padding: .5em;
+  padding: 0.5em;
   margin: auto;
   border-radius: 999px;
-  background: var(--text  -primary);
+  background: var(--text -primary);
   color: var(--text-secondary);
   font-size: 0.85rem;
   font-weight: 500;

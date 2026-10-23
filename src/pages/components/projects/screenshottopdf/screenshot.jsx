@@ -6,7 +6,7 @@ export default function screenshot() {
   return (
     <>
       <div className={styles.project}>
-        <h1>
+        <h1 className={styles.whiteLabel}>
           <p className={styles.black}>
             ScreenShot<span className={styles.blue}>To</span>
             <span className={styles.red}>PDF</span>

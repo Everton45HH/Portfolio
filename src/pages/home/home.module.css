@@ -177,9 +177,12 @@ nav li {
   gap: 4em;
   margin: 3em auto;
   font-weight: 600;
-  align-items: start;
+  align-items: center;
 }
 
+.projects > :nth-child(4) {
+  grid-column: 2;
+}
 
 @media (max-width: 900px) {
   .projects {

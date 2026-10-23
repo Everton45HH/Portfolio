@@ -6,7 +6,7 @@ export default function codex() {
   return (
     <>
       <div className={styles.project}>
-        <h1 style={{ "background-color": "black" }}>
+        <h1 className={styles.blackLabel }>
           <p style={{ color: "aqua" }}>CODEX</p>
         </h1>
 
@@ -30,7 +30,7 @@ export default function codex() {
         >
           Conhecer
         </a>
-        <img src={terminal} alt="gps_icon" className={styles.terminal} />
+        <img src={terminal} alt="icone_de_terminal" className={styles.terminal} />
       </div>
     </>
   );
