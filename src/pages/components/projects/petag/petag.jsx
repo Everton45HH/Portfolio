@@ -7,7 +7,7 @@ export default function Petag() {
   return (
     <>
       <div className={styles.project}>
-        <h1 className={styles.black}>
+        <h1 className={styles.whiteLabel}>
           <span className={styles.blue}>Pe</span>TAG
         </h1>
 

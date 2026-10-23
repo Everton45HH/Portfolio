@@ -1,6 +1,7 @@
 import styles from "./home.module.css";
 
 import Codex  from '../components/projects/codex/codex'
+import Neide  from '../components/projects/neide/neide'
 import Petag  from '../components/projects/petag/petag'
 import Screenshot  from '../components/projects/screenshottopdf/screenshot'
 import Face from "../components/face/face";
@@ -95,6 +96,7 @@ export default function Home() {
       <div className={styles.projects}>
 
         <Screenshot/>
+        <Neide/>
         <Petag/>
         <Codex/>
 
